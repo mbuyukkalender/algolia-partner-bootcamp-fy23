@@ -279,7 +279,6 @@ const ProductDetails = () => {
                   setCartOpenValue(!cartOpenValue)
                   setTimeout(() => setAddToCartIsClicked(false), 300)
                   // IMPLEMENT CONVERSION EVENT HERE // 
-                  sendEvent('conversion', hit, 'PDP: Add to cart')
                 }}
                 //* ==================================================================== *
               >
@@ -303,19 +302,6 @@ const ProductDetails = () => {
             <h3 className="title">{t('relatedTitle')}</h3>
             
             {/* IMPLEMENT RELATED PRODUCTS CAROUSEL HERE */}
-            <RelatedProducts
-              recommendClient={recommendClient}
-              indexName={indexName}          
-              objectIDs={[currentObjectID]}
-              itemComponent={RelatedItem}
-              maxRecommendations={10}
-              view={HorizontalSlider}
-              queryParameters={{
-                facetFilters: [
-                  'colour:'+ hit.colour
-                      ]
-              }}
-              />
           </div>
         )}
       </div>

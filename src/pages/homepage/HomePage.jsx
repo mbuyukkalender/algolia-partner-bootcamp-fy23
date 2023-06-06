@@ -125,12 +125,6 @@ const HomePage = ({ query, refine, results }) => {
                 queryParameters={{
                   filters: "brand:jordan OR brand:'nike performance'"
                 }}
-                fallbackParameters={{
-                  numericFilters: [
-                    'reviewCount > 40',
-                    'reviewScore > 4'
-                      ]
-                }}
               />
             </Suspense>
           )}
