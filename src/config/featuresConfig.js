@@ -81,7 +81,7 @@ export const shouldHaveInjectedHits = atom({
 
 export const shouldHaveFederatedSearch = atom({
   key: 'shouldHaveFederatedSearch', // unique ID (with respect to other atoms/selectors)
-  default: false, // default value (aka initial value)
+  default: true, // default value (aka initial value)
 })
 
 // RECOMMEND

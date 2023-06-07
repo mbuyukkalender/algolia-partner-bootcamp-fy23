@@ -15,7 +15,7 @@ export const federatedSearchConfig = {
   showCategories: true,
   showProducts: true,
   showBlogPosts: false,
-  showQueryCat: true,
+  showQueryCat: false,
 }
 
 // Change here your probability to show the query category by default prediction score > 60 will be displayed
